@@ -1,0 +1,27 @@
+Алфавит:
+abc
+Подстрока:
+ac
+Кратность:
+4
+Регулярная грамматика:
+Праволинейная
+Минимальная длинна цепочки:
+1
+Максимальная длинна цепочки:
+3
+Правила:
+G = {(S, A, B, C, D, E), (a, b, c), P, S}
+S -> aA|bA|cA|acE
+A -> aB|bB|cB|acC
+B -> aS|bS|cS|acD
+C -> aD|bD|cD|?
+D -> aE|bE|cE|
+E -> aC|bC|cC
+Цепочки:
+1. aA -> aacC -> aac
+2. bA -> bacC -> bac
+3. cA -> cacC -> cac
+4. acE -> acaC -> aca
+5. acE -> acbC -> acb
+6. acE -> accC -> acc
